@@ -1,0 +1,1 @@
+{"name":"my_smooth_wave","rgb_zones":[{"rgb":[0,0,0],"enabled":true},{"rgb":[0,0,0],"enabled":true},{"rgb":[0,0,0],"enabled":true},{"rgb":[0,0,0],"enabled":true}],"effect":{"SmoothWave":{"mode":"Change","clean_with_black":false}},"direction":"Left","speed":1,"brightness":"Low"}
