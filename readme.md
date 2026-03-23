@@ -88,3 +88,32 @@ NoDisplay=false
 ```
 update-desktop-database ~/.local/share/applications
 ```
+
+## สำหรับ Windows
+You can start the program from Windows Task Scheduler with the required command-line switches, and it will run in the background with no window while animations continue to work.
+
+To run legion-kb-rgb.exe in the background via Task Scheduler:
+
+Open Task Scheduler → Create Task.
+
+General:Name: e.g., Legion RGB Control.
+
+Triggers → New:Set to At log on → Any user.
+
+Actions → New:Action: Start a program.
+
+Program: Path to legion-kb-rgb.exe.
+
+Arguments: e.g., set -e Swipe -b High -s 1 -d Left -c 50,0,0,50,0,0,50,0,0,50,0,255 (customize as needed).
+
+Conditions: Uncheck all options.
+
+Settings: Uncheck Stop the task if it runs longer than.
+
+Click Ok to save.
+
+Test: Right-click task → Run. Restart PC to verify.
+
+The task will run in the background every time you reboot, and you'll have animations.
+
+Thanks for a great utility, 4JX!
