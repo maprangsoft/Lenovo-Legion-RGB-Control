@@ -84,3 +84,7 @@ Categories=Settings;HardwareSettings;
 StartupWMClass=legion-kb-rgb
 NoDisplay=false
 ```
+โหลดไอคอนหน้าจอใหม่
+```
+update-desktop-database ~/.local/share/applications
+```
