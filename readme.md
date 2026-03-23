@@ -2,7 +2,7 @@
 # Lenovo Legion RGB Control
 https://github.com/4JX/L5P-Keyboard-RGB
 การสร้าง service เพิ่มรัน
-## สำหรับ Linux
+## สำหรับ Linux Ubuntu, Fedora
 
 รันคำสั่งเช็ค idProduct ของ Keyboard รันคำสั่งดูว่ามีตรงกันกับใน github ไหม
 
@@ -63,4 +63,24 @@ systemctl --user enable legion-rgb.service
 systemctl --user start legion-rgb.service
 
 systemctl --user status legion-rgb.service
+```
+
+## สร้าง icon โปรแกรม
+```
+nano ~/.local/share/applications/lenovo-led.desktop
+```
+```
+[Desktop Entry]
+Type=Application
+Name=Lenovo Keyboard RGB
+Comment=Control LOQ Keyboard Lighting
+#Exec=/home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb load-profile --path /home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/my_smooth_wave
+Exec=sh -c "$HOME/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb load-profile --path $HOME/Desktop/portable-software/legion-kb-rgb-linux/my_smooth_wave"
+#Icon=/home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/icon.png
+#ใช้บรรทัดด้านล่างถ้ามีการเพิ่ม icon ใน /home/maprangsoft/.local/share/icons
+Icon=legion-kb-rgb
+Terminal=false
+Categories=Settings;HardwareSettings;
+StartupWMClass=legion-kb-rgb
+NoDisplay=false
 ```
