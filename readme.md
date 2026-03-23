@@ -1,5 +1,5 @@
 
-# Lenovo Legion RGB Control
+# บันทึกการใช้งาน  Lenovo Legion RGB Control
 https://github.com/4JX/L5P-Keyboard-RGB
 การสร้าง service เพิ่มรัน
 ## สำหรับ Linux Ubuntu, Fedora
