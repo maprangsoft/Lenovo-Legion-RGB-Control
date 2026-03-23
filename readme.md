@@ -41,7 +41,7 @@ After=default.target
 [Service]
 Type=simple
 # ใช้คำสั่ง CLI ที่คุณทดสอบแล้วว่ารันได้และไม่มีหน้าต่าง
-ExecStart=/home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb set -e SmoothWave -s 1 -d Left
+ExecStart=/home/<ยูเซอร์ของท่าน>/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb set -e SmoothWave -s 1 -d Left
 # ป้องกันการเปิด GUI ซ้ำซ้อน
 Environment=DISPLAY=:99
 Restart=always
@@ -74,10 +74,10 @@ nano ~/.local/share/applications/lenovo-led.desktop
 Type=Application
 Name=Lenovo Keyboard RGB
 Comment=Control LOQ Keyboard Lighting
-#Exec=/home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb load-profile --path /home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/my_smooth_wave
+#Exec=/home/<ยูเซอร์ของท่าน>/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb load-profile --path /home/<ยูเซอร์ของท่าน>/Desktop/portable-software/legion-kb-rgb-linux/my_smooth_wave
 Exec=sh -c "$HOME/Desktop/portable-software/legion-kb-rgb-linux/legion-kb-rgb load-profile --path $HOME/Desktop/portable-software/legion-kb-rgb-linux/my_smooth_wave"
-#Icon=/home/maprangsoft/Desktop/portable-software/legion-kb-rgb-linux/icon.png
-#ใช้บรรทัดด้านล่างถ้ามีการเพิ่ม icon ใน /home/maprangsoft/.local/share/icons
+#Icon=/home/<ยูเซอร์ของท่าน>/Desktop/portable-software/legion-kb-rgb-linux/icon.png
+#ใช้บรรทัดด้านล่างถ้ามีการเพิ่ม icon ใน /home/<ยูเซอร์ของท่าน>/.local/share/icons
 Icon=legion-kb-rgb
 Terminal=false
 Categories=Settings;HardwareSettings;
